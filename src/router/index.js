@@ -1,6 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Index from "../views/Index.vue";
+import Description from "../views/Description";
+import Group from "../views/Group";
+import Requirements from "../views/Requirements";
+import Architecture from "../views/Architecture";
+import Features from "../views/Features";
+import Plan from "../views/Plan";
 
 Vue.use(VueRouter);
 
@@ -8,37 +14,37 @@ const routes = [
   {
     path: "/",
     name: "index",
-    component: Home
+    component: Index
   },
   {
     path: "/description",
     name: "description",
-    component: Home
+    component: Description
   },
   {
     path: "/group",
     name: "group",
-    component: Home
+    component: Group
   },
   {
     path: "/requirements",
-    name: "home",
-    component: Home
+    name: "requirements",
+    component: Requirements
   },
   {
     path: "/architecture",
-    name: "home",
-    component: Home
+    name: "architecture",
+    component: Architecture
   },
   {
     path: "/features",
     name: "features",
-    component: Home
+    component: Features
   },
   {
     path: "/plan",
     name: "plan",
-    component: Home
+    component: Plan
   }
   // {
   //   path: "/about",
