@@ -117,7 +117,7 @@ export default {
 .img-size {
   width: 74px;
   height: 94px;
-  text-align: right;
+  text-align: center;
   margin-top: 20px;
   float: left;
   margin-left: 1.3em;
@@ -125,7 +125,7 @@ export default {
 .ma {
   width: 6em;
 }
-  .right {
-    padding-left: 14em;
-  }
+.right {
+  padding-left: 14em;
+}
 </style>

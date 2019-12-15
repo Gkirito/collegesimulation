@@ -1,7 +1,12 @@
 <template>
   <div class="top-tool-bar">
     <div class="logo">
-      <img src="./../assets/logo.png" alt="college logo" width="600em" height="100em"/>
+      <img
+        src="./../assets/logo.png"
+        alt="college logo"
+        width="600em"
+        height="100em"
+      />
     </div>
     <div class="router">
       <div class="route">

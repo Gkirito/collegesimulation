@@ -38,10 +38,9 @@
     }
   }
 }
-.ant-layout-footer{
+.ant-layout-footer {
   width: 100%;
-  padding: 1em 0 0 0 ;
-
+  padding: 1em 0 0 0;
 }
 </style>
 

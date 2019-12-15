@@ -9,6 +9,9 @@
                 <div v-if="key === 'imname'" class="title na">
                   {{ val }}
                 </div>
+                <div v-else-if="key.indexOf('img') === 0" class="imgout">
+                  <img :src="val" alt="pic1" />
+                </div>
                 <div
                   v-else-if="key.indexOf('content') < 0"
                   :id="key"
@@ -16,6 +19,7 @@
                 >
                   {{ val }}
                 </div>
+
                 <div v-else v-html="val"></div>
               </div>
             </a-tab-pane>
@@ -83,9 +87,14 @@ export default {
 .na {
   font-size: 1.4em;
 }
-img {
+.imgout {
   text-align: center;
-  width: 100%;
-  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+img {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
 }
 </style>
