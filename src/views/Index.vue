@@ -1,6 +1,7 @@
 <template>
   <div class="ct">
     <Descript />
+    <Create/>
   </div>
 </template>
 
@@ -8,9 +9,10 @@
 // @ is an alias to /src
 
 import Descript from "../components/Descript";
+import Create from "../components/Create";
 export default {
   name: "index",
-  components: { Descript }
+  components: {Create, Descript }
 };
 </script>
 

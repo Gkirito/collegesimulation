@@ -99,7 +99,6 @@ export default {
   color: white;
   background: #051876ad;
   font-family: "Heiti TC";
-  font-weight: bold;
   font-size: 1em;
 }
 .content-in {
