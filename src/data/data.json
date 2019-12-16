@@ -43,6 +43,7 @@
       "content8-5": "步骤五、使用nmap对整个IP网段进行扫描。 <br />",
       "img5": "static/Picture5.png",
       "content8-6": "步骤六、分析nmap返回的扫描结果。可以看到Nmap扫描结果显示目标主机的SMB服务包含MS08-067漏洞。\n<br />1）目标主机开发的端口\n<br />",
+      "table1": "",
       "content8-7": "步骤七、在Metasploit 中搜索MS08-067漏洞对应的渗透模块。<br />",
       "img6": "",
       "results": "实验结果与结论要求",
