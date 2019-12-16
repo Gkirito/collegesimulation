@@ -1,7 +1,7 @@
 <template>
   <div class="descri">
     <a-row>
-      <a-col :span="18">
+      <a-col :span="20">
         <div class="cont">
           <a-tabs defaultActiveKey="1">
             <a-tab-pane :tab="data.tab" key="1" class="txt">
@@ -26,7 +26,7 @@
           </a-tabs>
         </div>
       </a-col>
-      <a-col :span="6">
+      <a-col :span="4">
         <a-anchor :affix="true" :showInkInFixed="true">
           <a-anchor-link
             v-for="(val, her, index) in data.link"
