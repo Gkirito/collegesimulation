@@ -4,7 +4,7 @@
       <img
         src="./../assets/logo.png"
         alt="college logo"
-        width="600em"
+        width="550em"
         height="100em"
       />
     </div>
