@@ -101,16 +101,14 @@ export default {
 .na {
   font-size: 1.4em;
 }
-.imgout {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
 .table {
   width: 40em;
   margin: 0 auto;
 }
 img {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   margin: 0 auto;
   width: 50%;
   height: 50%;
