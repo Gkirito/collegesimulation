@@ -12,6 +12,16 @@
                 <div v-else-if="key.indexOf('img') === 0" class="imgout">
                   <img :src="val" alt="pic1" />
                 </div>
+                <div v-else-if="key.indexOf('table') === 0" class="table">
+                  <a-table
+                    :columns="val.columns"
+                    :dataSource="val.data"
+                    :pagination="false"
+                    size="small"
+                    bordered
+                  >
+                  </a-table>
+                </div>
                 <div
                   v-else-if="key.indexOf('content') < 0"
                   :id="key"
@@ -20,14 +30,17 @@
                   {{ val }}
                 </div>
 
-                <div v-else v-html="val"></div>
+                <div
+                  v-else-if="key.indexOf('content') === 0"
+                  v-html="val"
+                ></div>
               </div>
             </a-tab-pane>
           </a-tabs>
         </div>
       </a-col>
       <a-col :span="4">
-        <a-anchor :affix="true" :showInkInFixed="true">
+        <a-anchor :affix="true" :showInkInFixed="true" :offsetTop="35">
           <a-anchor-link
             v-for="(val, her, index) in data.link"
             v-bind:key="index"
@@ -44,7 +57,7 @@
 </template>
 
 <script>
-import { Tabs, Row, Col, Anchor, BackTop } from "ant-design-vue";
+import { Tabs, Row, Col, Anchor, BackTop, Table } from "ant-design-vue";
 import "core-js";
 
 export default {
@@ -57,7 +70,8 @@ export default {
     ACol: Col,
     AAnchor: Anchor,
     AAnchorLink: Anchor.Link,
-    ABackTop: BackTop
+    ABackTop: BackTop,
+    ATable: Table
   }
 };
 </script>

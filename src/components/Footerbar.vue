@@ -103,7 +103,7 @@ export default {
   font-size: 1em;
 }
 .content-in {
-  padding: 3em 0 2em 4em;
+  padding: 3em 4em 2em 4em;
   margin: 0 auto;
   width: @base-width;
 }
@@ -126,6 +126,6 @@ export default {
   width: 6em;
 }
 .right {
-  padding-left: 14em;
+  padding-left: 10em;
 }
 </style>

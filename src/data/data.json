@@ -52,7 +52,44 @@
       "students": "面向学生要求",
       "content11": "2-11面向学生要求\n<br />（1）\t专业与年级要求\n计算机科学与技术、软件工程、网络工程等专业三、四年级本科生。\n<br />（2）\t基本知识和能力要求\n学完计算机网络、操作系统等核心课程。\n",
       "share": "实验项目应用及共享情况",
-      "content12": "2-12实验项目应用及共享情况\n<br />（1）\t本校上线时间 ：2015年1月\n<br />（2）\t已服务过的本校学生人数：500人\n<br />（3）\t是否纳入到教学计划： \uF052是  £否\n(勾选“是”，请附所属课程教学大纲）\n<br />（4）\t是否面向社会提供服务：\uF052是  £否\n<br />（5）\t社会开放时间 ：3年，已服务人数: 1000人次以上。\n"
+      "content12": "2-12实验项目应用及共享情况\n<br />（1）\t本校上线时间 ：2015年1月\n<br />（2）\t已服务过的本校学生人数：500人\n<br />（3）\t是否纳入到教学计划： \uF052是  £否\n(勾选“是”，请附所属课程教学大纲）\n<br />（4）\t是否面向社会提供服务：\uF052是  £否\n<br />（5）\t社会开放时间 ：3年，已服务人数: 1000人次以上。\n",
+      "table": {
+        "columns": [{
+          "title": "Name",
+          "dataIndex": "name",
+          "scopedSlots": { "customRender": "name" }
+        },
+          {
+            "title": "Cash Assets",
+            "className": "column-money",
+            "dataIndex": "money"
+          },
+          {
+            "title": "Address",
+            "dataIndex": "address"
+          }
+        ],
+        "data": [
+          {
+            "key": "1",
+            "name": "John Brown",
+            "money": "￥300,000.00",
+            "address": "New York No. 1 Lake Park"
+          },
+          {
+            "key": "2",
+            "name": "Jim Green",
+            "money": "￥1,256,000.00",
+            "address": "London No. 1 Lake Park"
+          },
+          {
+            "key": "3",
+            "name": "Joe Black",
+            "money": "￥120,000.00",
+            "address": "Sidney No. 1 Lake Park"
+          }
+        ]
+      }
     }
   },
   "group": {
