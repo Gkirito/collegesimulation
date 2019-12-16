@@ -55,19 +55,26 @@
       "share": "实验项目应用及共享情况",
       "content12": "2-12实验项目应用及共享情况\n<br />（1）\t本校上线时间 ：2015年1月\n<br />（2）\t已服务过的本校学生人数：500人\n<br />（3）\t是否纳入到教学计划： \uF052是  £否\n(勾选“是”，请附所属课程教学大纲）\n<br />（4）\t是否面向社会提供服务：\uF052是  £否\n<br />（5）\t社会开放时间 ：3年，已服务人数: 1000人次以上。\n",
       "table": {
-        "columns": [{
-          "title": "Name",
-          "dataIndex": "name",
-          "scopedSlots": { "customRender": "name" }
-        },
+        "columns": [
+          {
+            "title": "Name",
+            "dataIndex": "name",
+            "scopedSlots": { "customRender": "name" },
+            "align": "center",
+            "width": 100
+          },
           {
             "title": "Cash Assets",
             "className": "column-money",
-            "dataIndex": "money"
+            "dataIndex": "money",
+            "align": "center",
+            "width": 100
           },
           {
             "title": "Address",
-            "dataIndex": "address"
+            "dataIndex": "address",
+            "align": "center",
+            "width": 100
           }
         ],
         "data": [

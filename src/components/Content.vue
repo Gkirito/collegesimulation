@@ -106,6 +106,10 @@ export default {
   display: table-cell;
   vertical-align: middle;
 }
+.table {
+  width: 40em;
+  margin: 0 auto;
+}
 img {
   margin: 0 auto;
   width: 50%;

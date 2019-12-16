@@ -1,14 +1,19 @@
 <template>
-  <div class="index">
-    首页
+  <div class="ct">
+    <Descript />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 
+import Descript from "../components/Descript";
 export default {
   name: "index",
-  components: {}
+  components: { Descript }
 };
 </script>
+
+<style lang="less" scoped>
+@import "../themes/base";
+</style>

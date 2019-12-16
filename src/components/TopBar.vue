@@ -50,7 +50,7 @@ export default {
   margin-top: 1em;
 }
 .title {
-  font-family: "Songti SC";
+  font-family: "Hei";
   font-weight: bold;
   margin: 10% 0 10% 0;
   font-size: 4.8em;
