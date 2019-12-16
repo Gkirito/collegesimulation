@@ -58,7 +58,6 @@
 
 <script>
 import { Tabs, Row, Col, Anchor, BackTop, Table } from "ant-design-vue";
-import "core-js";
 
 export default {
   props: ["data"],

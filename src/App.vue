@@ -27,6 +27,7 @@
 #components-layout-demo-basic .ant-layout-footer {
   background: url("./assets/back.jpg") 0 0 no-repeat;
   background-size: 100% 100%;
+  background-color: black;
   /*color: #fff;*/
 }
 #components-layout-demo-basic {

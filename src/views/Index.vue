@@ -1,7 +1,7 @@
 <template>
   <div class="ct">
     <Descript />
-    <Create/>
+    <Create />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import Descript from "../components/Descript";
 import Create from "../components/Create";
 export default {
   name: "index",
-  components: {Create, Descript }
+  components: { Create, Descript }
 };
 </script>
 

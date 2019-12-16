@@ -24,6 +24,7 @@ export default {
 <style scoped lang="less">
 @import "../themes/base";
 .create-frame {
+  margin-top: 3em;
 }
 span {
   color: coral;
