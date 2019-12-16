@@ -91,8 +91,8 @@ export default {
   font-size: 1.2em;
   font-family: "Songti SC";
 }
-    .button-index {
-        padding-top: 2.5em;
-        font-size: 1em;
-    }
+.button-index {
+  padding-top: 2.5em;
+  font-size: 1em;
+}
 </style>
