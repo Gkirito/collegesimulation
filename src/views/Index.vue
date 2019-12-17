@@ -2,6 +2,7 @@
   <div class="ct">
     <Descript />
     <Create />
+    <Competition />
   </div>
 </template>
 
@@ -10,9 +11,10 @@
 
 import Descript from "../components/Descript";
 import Create from "../components/Create";
+import Competition from "../components/Competition";
 export default {
   name: "index",
-  components: { Create, Descript }
+  components: { Competition, Create, Descript }
 };
 </script>
 
