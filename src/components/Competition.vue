@@ -38,7 +38,7 @@
             </div>
             <div>
               <div class="content-text">
-                  <a-icon type="like" />
+                <a-icon type="like" />
                 资料1
               </div>
               <a-divider dashed class="dotted-line" />
