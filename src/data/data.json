@@ -42,28 +42,130 @@
       "img4": "/static/Picture4.png",
       "content8-5": "步骤五、使用nmap对整个IP网段进行扫描。 <br />",
       "img5": "/static/Picture5.png",
-      "content8-6": "步骤六、分析nmap返回的扫描结果。可以看到Nmap扫描结果显示目标主机的SMB服务包含MS08-067漏洞。\n<br />1）目标主机开发的端口\n<br />",
-      "table1": "",
+      "content8-6-1": "步骤六、分析nmap返回的扫描结果。可以看到Nmap扫描结果显示目标主机的SMB服务包含MS08-067漏洞。\n<br />1）目标主机开发的端口\n<br />",
+      "table1": {
+        "columns": [{
+          "title": "PORT",
+          "dataIndex": "port",
+          "align": "center"
+        },
+          {
+            "title": "STATE",
+            "dataIndex": "state",
+            "align": "center"
+          },
+          {
+            "title": "SERVICE",
+            "dataIndex": "service",
+            "align": "center"
+          }
+        ],
+        "data": [
+          {
+            "key": "1",
+            "port": "135/TCP",
+            "state": "open",
+            "service": "Msrpc"
+          },
+          {
+            "key": "2",
+            "port": "139/tcp",
+            "state": "open",
+            "service": "Netbios-ssn"
+          },
+          {
+            "key": "3",
+            "port": "445/tcp",
+            "state": "open",
+            "service": "Microsoft-ds"
+          },
+          {
+            "key": "4",
+            "port": "777/tcp",
+            "state": "open",
+            "service": "Multiling-http"
+          },
+          {
+            "key": "5",
+            "port": "1025/tcp",
+            "state": "open",
+            "service": "NFS-or-IIS"
+          },
+          {
+            "key": "6",
+            "port": "1521/tcp",
+            "state": "open",
+            "service": "Oracle "
+          },
+          {
+            "key": "7",
+            "port": "...",
+            "state": "...",
+            "service": "..."
+          }
+        ]
+      },
+      "content8-6-2": "2）目标主机存在的漏洞<br />",
+      "table2": {
+        "columns": [{
+          "title": "漏洞版本号",
+          "dataIndex": "loophole-number",
+          "align": "center"
+        },
+          {
+            "title": "漏洞描述",
+            "dataIndex": "loophole-describe",
+            "align": "center"
+          }
+        ],
+        "data": [
+          {
+            "key": "1",
+            "loophole-number": "Ms08_067",
+            "loophole-describe": "vulnerable"
+          },
+          {
+            "key": "2",
+            "loophole-number": "Conficker",
+            "loophole-describe": "Likely CLEAN"
+          },
+          {
+            "key": "3",
+            "loophole-number": "Ms067-025",
+            "loophole-describe": "CHECK DISABLED"
+          },
+          {
+            "key": "4",
+            "loophole-number": "Ms07-029",
+            "loophole-describe": "CHECK DISABLED"
+          },
+          {
+            "key": "5",
+            "loophole-number": "...",
+            "loophole-describe": "..."
+          }
+        ]
+      },
       "content8-7": "步骤七、在Metasploit 中搜索MS08-067漏洞对应的渗透模块。<br />",
       "img7": "/static/Picture7.png",
-      "content8_8_1": "渗透攻击模块的路径为“exploit/Windows/smb/ms08_067_netapi”，由四个部分组成，分别表示模块类型、目标平台、目标服务和模块名称。\n<br />步骤八、启用这个渗透测试攻击模块查看基本信息，包括该模块所适用的攻击载荷模块，然后选择其中一个攻击载荷。\n<br />1）Use exploit/Windows/smb/ms08_067_netapi\n<br />",
-      "img8_1": "/static/Picture8_1.png",
-      "content8_8_2": "2）显示该模块的所有攻击载荷Payloads<br />",
-      "img8_2": "/static/Picture8_2.png",
-      "content8_8_3": "3）选择并设置加载攻击载荷\n<br />Set payload generic/shell_reverse_tcp\n<br />",
-      "img8_3": "/static/Picture8_3.png",
-      "content8_9": "步骤九、显示模块需要设置参数。<br />",
+      "content8-8-1": "渗透攻击模块的路径为“exploit/Windows/smb/ms08_067_netapi”，由四个部分组成，分别表示模块类型、目标平台、目标服务和模块名称。\n<br />步骤八、启用这个渗透测试攻击模块查看基本信息，包括该模块所适用的攻击载荷模块，然后选择其中一个攻击载荷。\n<br />1）Use exploit/Windows/smb/ms08_067_netapi\n<br />",
+      "img8-1": "/static/Picture8_1.png",
+      "content8-8-2": "2）显示该模块的所有攻击载荷Payloads<br />",
+      "img8-2": "/static/Picture8_2.png",
+      "content8-8-3": "3）选择并设置加载攻击载荷\n<br />Set payload generic/shell_reverse_tcp\n<br />",
+      "img8-3": "/static/Picture8_3.png",
+      "content8-9": "步骤九、显示模块需要设置参数。<br />",
       "img9": "/static/Picture9.png",
-      "content8_10_1": "需要设置目标机IP地址、端口号等，设置本地攻击机的IP地址和端口号，目标机的操作系统信息。\n<br />步骤十、设置渗透测试攻击模块的参数\n<br />1）设置目标机相关参数，设置本地攻击机相关参数并显示目标操作系统的类型。\n<br />",
-      "img10_1": "/static/Picture10_1.png",
-      "content8_10_2": "2）设置目标机的操作系统类型。<br />",
-      "img10_2": "/static/Picture10_2.png",
-      "content8_10_3": "设置为Windows 2003 sp0 universal\n<br />3）显示并核对攻击模块最终的参数设置\n<br />",
-      "img10_3": "/static/Picture10_3.png",
-      "content8_11": "步骤十一：使用“exploit”命令发起渗透攻击。攻击成功获取shell通过net user命令可以在目标机上创建用户，再通过net localgroup administrators 命令在目标及上加入管理员组。<br />",
-      "img11_1": "/static/Picture11_1.png",
-      "img11_2": "/static/Picture11_2.png",
-      "content8_12": "步骤十二：撰写渗透测试攻击报告，提供给客户。客户根据撰写的测试报告，对网站进行漏洞修补，以防止黑客的入侵！<br />",
+      "content8-10-1": "需要设置目标机IP地址、端口号等，设置本地攻击机的IP地址和端口号，目标机的操作系统信息。\n<br />步骤十、设置渗透测试攻击模块的参数\n<br />1）设置目标机相关参数，设置本地攻击机相关参数并显示目标操作系统的类型。\n<br />",
+      "img10-1": "/static/Picture10_1.png",
+      "content8-10-2": "2）设置目标机的操作系统类型。<br />",
+      "img10-2": "/static/Picture10_2.png",
+      "content8-10-3": "设置为Windows 2003 sp0 universal\n<br />3）显示并核对攻击模块最终的参数设置\n<br />",
+      "img10-3": "/static/Picture10_3.png",
+      "content8-11": "步骤十一：使用“exploit”命令发起渗透攻击。攻击成功获取shell通过net user命令可以在目标机上创建用户，再通过net localgroup administrators 命令在目标及上加入管理员组。<br />",
+      "img11-1": "/static/Picture11_1.png",
+      "img11-2": "/static/Picture11_2.png",
+      "content8-12": "步骤十二：撰写渗透测试攻击报告，提供给客户。客户根据撰写的测试报告，对网站进行漏洞修补，以防止黑客的入侵！<br />",
       "results": "实验结果与结论要求",
       "content9": "2-9实验结果与结论要求<br />（1）\t是否记录每步实验结果：R是 £否\n<br />（2）\t实验结果与结论要求：R实验报告 R心得体会£其他 \n<br />（3）\t其他描述：渗透测试报告\n",
       "assessment": "考核要求",
@@ -71,51 +173,7 @@
       "students": "面向学生要求",
       "content11": "2-11面向学生要求\n<br />（1）\t专业与年级要求\n计算机科学与技术、软件工程、网络工程等专业三、四年级本科生。\n<br />（2）\t基本知识和能力要求\n学完计算机网络、操作系统等核心课程。\n",
       "share": "实验项目应用及共享情况",
-      "content12": "2-12实验项目应用及共享情况\n<br />（1）\t本校上线时间 ：2015年1月\n<br />（2）\t已服务过的本校学生人数：500人\n<br />（3）\t是否纳入到教学计划： \uF052是  £否\n(勾选“是”，请附所属课程教学大纲）\n<br />（4）\t是否面向社会提供服务：\uF052是  £否\n<br />（5）\t社会开放时间 ：3年，已服务人数: 1000人次以上。\n",
-      "table": {
-        "columns": [
-          {
-            "title": "Name",
-            "dataIndex": "name",
-            "scopedSlots": { "customRender": "name" },
-            "align": "center",
-            "width": 100
-          },
-          {
-            "title": "Cash Assets",
-            "className": "column-money",
-            "dataIndex": "money",
-            "align": "center",
-            "width": 100
-          },
-          {
-            "title": "Address",
-            "dataIndex": "address",
-            "align": "center",
-            "width": 100
-          }
-        ],
-        "data": [
-          {
-            "key": "1",
-            "name": "John Brown",
-            "money": "￥300,000.00",
-            "address": "New York No. 1 Lake Park"
-          },
-          {
-            "key": "2",
-            "name": "Jim Green",
-            "money": "￥1,256,000.00",
-            "address": "London No. 1 Lake Park"
-          },
-          {
-            "key": "3",
-            "name": "Joe Black",
-            "money": "￥120,000.00",
-            "address": "Sidney No. 1 Lake Park"
-          }
-        ]
-      }
+      "content12": "2-12实验项目应用及共享情况\n<br />（1）\t本校上线时间 ：2015年1月\n<br />（2）\t已服务过的本校学生人数：500人\n<br />（3）\t是否纳入到教学计划： \uF052是  £否\n(勾选“是”，请附所属课程教学大纲）\n<br />（4）\t是否面向社会提供服务：\uF052是  £否\n<br />（5）\t社会开放时间 ：3年，已服务人数: 1000人次以上。\n"
     }
   },
   "group": {
