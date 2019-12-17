@@ -23,6 +23,7 @@
                     size="small"
                     bordered
                   >
+                    <!--                  <img slot="image" slot-scope="text" src="{{text}}" >-->
                   </a-table>
                 </div>
                 <div v-else-if="key.indexOf('table') === 0" class="table">
@@ -71,71 +72,74 @@
 
 <script>
 import { Tabs, Row, Col, Anchor, BackTop, Table } from "ant-design-vue";
-const renderContent = (value, row, index) => {
-  const obj = {
-    children: value,
-    attrs: {}
-  };
-  if (index === 4) {
-    obj.attrs.colSpan = 0;
-  }
-  return obj;
-};
+// const show = da => {
+//   return
+// };
 export default {
   data() {
     const columns = [
       {
-        title: "Name",
-        dataIndex: "name",
-        customRender: (text, row, index) => {
-          if (index < 2) {
-            return {
-              children: { text },
-              attrs: {
-                colSpan: 5
-              }
-            };
-          }
-          return { text };
-        }
-      },
-      {
-        title: "Age",
-        dataIndex: "age",
-        customRender: renderContent
-      },
-      {
-        title: "Home phone",
+        title: "指标",
+        dataIndex: "target",
         colSpan: 2,
-        dataIndex: "tel",
+        width: 80,
         customRender: (value, row, index) => {
           const obj = {
             children: value,
             attrs: {}
           };
-          if (index === 2) {
-            obj.attrs.rowSpan = 2;
+          if (index === 0) {
+            obj.attrs.colSpan = 2;
           }
-          // These two are merged into above cell
+          if (index === 1) {
+            obj.attrs.rowSpan = 4;
+            obj.attrs.width = 80;
+          }
+          if (index === 2) {
+            obj.attrs.rowSpan = 0;
+          }
           if (index === 3) {
             obj.attrs.rowSpan = 0;
           }
           if (index === 4) {
+            obj.attrs.rowSpan = 0;
+          }
+          return obj;
+        }
+      },
+      {
+        title: "target",
+        colSpan: 0,
+        dataIndex: "target0",
+        width: 80,
+        customRender: (value, row, index) => {
+          const obj = {
+            children: value,
+            attrs: {}
+          };
+          if (index === 0) {
             obj.attrs.colSpan = 0;
           }
           return obj;
         }
       },
       {
-        title: "Phone",
-        colSpan: 0,
-        dataIndex: "phone",
-        customRender: renderContent
-      },
-      {
-        title: "Address",
-        dataIndex: "address",
-        customRender: renderContent
+        title: "内容",
+        dataIndex: "contents",
+        colSpan: 1,
+        customRender: (value, row, index) => {
+          if (index === 0) {
+            return (
+              <div>
+                {value.data} <img src={value.image}></img>
+              </div>
+            );
+          }
+          return {
+            children: value,
+            attrs: {}
+          };
+        }
       }
     ];
     return {
@@ -143,7 +147,7 @@ export default {
     };
   },
   props: ["data"],
-  name: "content",
+  name: "contentu",
   components: {
     ATabs: Tabs,
     ATabPane: Tabs.TabPane,

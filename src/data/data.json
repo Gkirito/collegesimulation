@@ -191,7 +191,8 @@
             "title": "序号",
             "dataIndex": "number",
             "align": "center",
-            "width": 50
+            "width": 50,
+            "key": "number"
           },
           {
             "title": "姓名",
@@ -232,6 +233,7 @@
         ],
         "data": [
           {
+            "key": "1",
             "number": "1",
             "name": "张海平",
             "address": "杭电信工",
@@ -241,6 +243,7 @@
             "remarks": ""
           },
           {
+            "key": "2",
             "number": "2",
             "name": "叶岩明",
             "address": "杭电信工",
@@ -250,6 +253,7 @@
             "remarks": ""
           },
           {
+            "key": "3",
             "number": "3",
             "name": "施永强",
             "address": "杭电信工",
@@ -259,6 +263,7 @@
             "remarks": ""
           },
           {
+            "key": "4",
             "number": "4",
             "name": "周梦熊",
             "address": "杭电信工",
@@ -268,6 +273,7 @@
             "remarks": ""
           },
           {
+            "key": "5",
             "number": "5",
             "name": "王  挺",
             "address": "杭电信工",
@@ -286,7 +292,8 @@
             "title": "序号",
             "dataIndex": "number",
             "align": "center",
-            "width": 50
+            "width": 50,
+            "key": "number"
           },
           {
             "title": "姓名",
@@ -327,6 +334,7 @@
         ],
         "data": [
           {
+            "key": "1",
             "number": "1",
             "name": "郑吉宏",
             "address": "长亭科技",
@@ -336,6 +344,7 @@
             "remarks": ""
           },
           {
+            "key": "2",
             "number": "2",
             "name": "郑秋华",
             "address": "杭电",
@@ -345,6 +354,7 @@
             "remarks": ""
           },
           {
+            "key": "3",
             "number": "3",
             "name": "王小军",
             "address": "杭电",
@@ -354,6 +364,7 @@
             "remarks": ""
           },
           {
+            "key": "4",
             "number": "4",
             "name": "汪  洋",
             "address": "安般信息",
@@ -363,6 +374,7 @@
             "remarks": ""
           },
           {
+            "key": "5",
             "number": "5",
             "name": "沈保华",
             "address": "杭电信工",
@@ -372,6 +384,7 @@
             "remarks": ""
           },
           {
+            "key": "6",
             "number": "6",
             "name": "张  晗",
             "address": "杭电信工",
@@ -418,31 +431,16 @@
       "#framework": "项目架构及研发技术"
     },
     "cont": {
-      "table": {
-        "columns": [
-          {
-            "title": "指标",
-            "colSpan": 2,
-            "dataIndex": "target",
-            "key": "target"
-          },
-          {
-            "title": "target0",
-            "colSpan": 0,
-            "dataIndex": "target0",
-            "customRender": "renderContent"
-          },
-          {
-            "title": "内容",
-            "dataIndex": "contents",
-            "colSpan": 1
-          }
-        ],
+      "special-table": {
         "data": [
           {
             "key": "1",
             "target": "系统架构图及简要说明",
-            "contents": "信息安全云实验平台实验室网络部署环境如图所示。其中，路由器和交换机等网络设备将用户和存储连接起来，是用户之间以及用户与资源之间的通信设备；实训平台设备提供云存储和统一资源调度系统功能，其可以是一台设备，也可以是多台设备的集群部署，以提高设备的虚拟化能力，用户通过统一资源调度平台调用其中的所所有资源，而无需关注硬件设备；教师可以对平台进行统一管理，包括账户管理、资源管理、实验管理等；学生可以通过平台进行各项安全实验及技术验证等操作。"
+            "contents": {
+              "data":"信息安全云实验平台实验室网络部署环境如图所示。其中，路由器和交换机等网络设备将用户和存储连接起来，是用户之间以及用户与资源之间的通信设备；实训平台设备提供云存储和统一资源调度系统功能，其可以是一台设备，也可以是多台设备的集群部署，以提高设备的虚拟化能力，用户通过统一资源调度平台调用其中的所所有资源，而无需关注硬件设备；教师可以对平台进行统一管理，包括账户管理、资源管理、实验管理等；学生可以通过平台进行各项安全实验及技术验证等操作。",
+              "image": "/static/Picture12.png"
+            }
+
           },
           {
             "key": "2",

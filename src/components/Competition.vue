@@ -39,7 +39,17 @@
             <div>
               <div class="content-text">
                 <a-icon type="like" />
-                资料1
+                “第五空间”网络安全创新能力大赛 特等奖
+              </div>
+              <a-divider dashed class="dotted-line" />
+              <div class="content-text">
+                <a-icon type="like" />
+                首届Byte CTF字节跳动网络安全攻防大赛 一等奖
+              </div>
+              <a-divider dashed class="dotted-line" />
+              <div class="content-text">
+                <a-icon type="like" />
+                浙江省第二届大学生网络与信息安全竞赛 一等奖一个 二等奖两个
               </div>
               <a-divider dashed class="dotted-line" />
             </div>

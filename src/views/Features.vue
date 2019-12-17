@@ -1,11 +1,11 @@
 <template>
   <div class="ct">
-    <Content :data="listdata" />
+    <Contentu :data="listdata" />
   </div>
 </template>
 
 <script>
-import Content from "@/components/Content";
+import Contentu from "@/components/Contentu";
 import data from "../data/data";
 export default {
   data() {
@@ -15,7 +15,7 @@ export default {
   },
   name: "features",
   components: {
-    Content
+    Contentu
   }
 };
 </script>
