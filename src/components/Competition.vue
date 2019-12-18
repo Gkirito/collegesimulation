@@ -108,7 +108,6 @@ export default {
 @import "../themes/base";
 .competition-frame {
   width: @base-width;
-  height: 300px;
   margin-top: 2em;
 }
 .competition-content {
