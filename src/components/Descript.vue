@@ -4,16 +4,12 @@
       <a-col :span="12">
         <div class="description-right">
           <iframe
-            src="//player.bilibili.com/player.html?aid=69783568&cid=120927380&page=1"
-            scrolling="no"
-            border="0"
-            frameborder="no"
-            framespacing="0"
+            src="http://player.youku.com/embed/XNDQ4ODcxNzkyNA=="
+            frameborder="0"
             allowfullscreen="true"
             width="530em"
             height="360em"
-          >
-          </iframe>
+          ></iframe>
         </div>
       </a-col>
       <a-col :span="12">
