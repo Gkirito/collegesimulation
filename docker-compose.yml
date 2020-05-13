@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  collegesimulation:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: collegesimulation:latest
+    container_name: collegesimulation
+    restart: always
+    ports:
+    - "80:80"
