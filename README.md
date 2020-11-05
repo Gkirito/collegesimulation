@@ -1,4 +1,4 @@
-# collegesimulation
+# collegesimulation 👋
 
 ## Project setup
 ```
