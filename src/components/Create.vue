@@ -10,7 +10,15 @@
       <div class="outside-second">
         <div class="outside-first">
           <a-row>
+            <a href="/3d/index.html">
             <a-col :span="10">
+            <img src="../assets/start.png" alt="">
+            </a-col>
+            </a>
+            <a-col :span="2">
+              <a-divider type="vertical" class="center-divider" />
+            </a-col>
+             <a-col :span="10">
               <div>
                 <a-row>
                   <a-col :span="18">
@@ -97,68 +105,6 @@
                     <div class="content-text-right">
                       <a-icon type="download" />
                       资料下载
-                    </div>
-                  </a-col>
-                </a-row>
-              </div>
-            </a-col>
-            <a-col :span="2">
-              <a-divider type="vertical" class="center-divider" />
-            </a-col>
-            <a-col :span="10">
-              <div>
-                <a-row>
-                  <a-col :span="18">
-                    <div class="title-top">
-                      通知公告
-                      <span class="little-title">ANNOUNCEMENTS</span>
-                    </div>
-                  </a-col>
-                  <a-col :span="6">
-                    <div class="title-right">
-                      查看更多
-                      <a-icon type="plus-circle" />
-                    </div>
-                  </a-col>
-                </a-row>
-                <a-row>
-                  <a-col :span="16">
-                    <div class="content-text-left">
-                      <a-icon type="notification" />
-                      通知1
-                    </div>
-                  </a-col>
-                  <a-col :span="8">
-                    <div class="content-text-right">
-                      更新时间：2019-12-10
-                    </div>
-                  </a-col>
-                </a-row>
-                <a-divider dashed class="dotted-line" />
-                <a-row>
-                  <a-col :span="16">
-                    <div class="content-text-left">
-                      <a-icon type="notification" />
-                      通知2
-                    </div>
-                  </a-col>
-                  <a-col :span="8">
-                    <div class="content-text-right">
-                      更新时间：2019-12-10
-                    </div>
-                  </a-col>
-                </a-row>
-                <a-divider dashed class="dotted-line" />
-                <a-row>
-                  <a-col :span="16">
-                    <div class="content-text-left">
-                      <a-icon type="notification" />
-                      通知3
-                    </div>
-                  </a-col>
-                  <a-col :span="8">
-                    <div class="content-text-right">
-                      更新时间：2019-12-10
                     </div>
                   </a-col>
                 </a-row>
