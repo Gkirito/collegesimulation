@@ -44,11 +44,12 @@
       "img5": "/static/Picture5.png",
       "content8-6-1": "步骤六、分析nmap返回的扫描结果。可以看到Nmap扫描结果显示目标主机的SMB服务包含MS08-067漏洞。\n<br />1）目标主机开发的端口\n<br />",
       "table1": {
-        "columns": [{
-          "title": "PORT",
-          "dataIndex": "port",
-          "align": "center"
-        },
+        "columns": [
+          {
+            "title": "PORT",
+            "dataIndex": "port",
+            "align": "center"
+          },
           {
             "title": "STATE",
             "dataIndex": "state",
@@ -107,11 +108,12 @@
       },
       "content8-6-2": "2）目标主机存在的漏洞<br />",
       "table2": {
-        "columns": [{
-          "title": "漏洞版本号",
-          "dataIndex": "loophole-number",
-          "align": "center"
-        },
+        "columns": [
+          {
+            "title": "漏洞版本号",
+            "dataIndex": "loophole-number",
+            "align": "center"
+          },
           {
             "title": "漏洞描述",
             "dataIndex": "loophole-describe",
@@ -410,7 +412,7 @@
     },
     "cont": {
       "website": "有效链接网址",
-      "content1": "3-1有效链接网址<br />10.129.2.227:8000",
+      "content1": "3-1有效链接网址 <a herf='/download/kali-linux-2022.1-vmware-amd64.7z'>下载</a> <br />10.129.2.227:8000",
       "condition": "网络条件要求",
       "content2": "3-2网络条件要求<br />（1）说明客户端到服务器的带宽要求（需提供测试带宽服务）\n<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\uF06C\t基于公有云服务器部署的系统，5M-10M带宽；\n<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\uF06C\t基于局域网服务器部署的系统，10M-50M带宽。\n<br />（2）说明能够支持的同时在线人数（需提供在线排队提示服务）<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100．\n",
       "operating": "用户操作系统要求",
@@ -437,10 +439,9 @@
             "key": "1",
             "target": "系统架构图及简要说明",
             "contents": {
-              "data":"信息安全云实验平台实验室网络部署环境如图所示。其中，路由器和交换机等网络设备将用户和存储连接起来，是用户之间以及用户与资源之间的通信设备；实训平台设备提供云存储和统一资源调度系统功能，其可以是一台设备，也可以是多台设备的集群部署，以提高设备的虚拟化能力，用户通过统一资源调度平台调用其中的所所有资源，而无需关注硬件设备；教师可以对平台进行统一管理，包括账户管理、资源管理、实验管理等；学生可以通过平台进行各项安全实验及技术验证等操作。",
+              "data": "信息安全云实验平台实验室网络部署环境如图所示。其中，路由器和交换机等网络设备将用户和存储连接起来，是用户之间以及用户与资源之间的通信设备；实训平台设备提供云存储和统一资源调度系统功能，其可以是一台设备，也可以是多台设备的集群部署，以提高设备的虚拟化能力，用户通过统一资源调度平台调用其中的所所有资源，而无需关注硬件设备；教师可以对平台进行统一管理，包括账户管理、资源管理、实验管理等；学生可以通过平台进行各项安全实验及技术验证等操作。",
               "image": "/static/Picture12.png"
             }
-
           },
           {
             "key": "2",
@@ -452,24 +453,23 @@
             "key": "3",
             "target": "实验教学项目",
             "target0": "开发工具",
-            "contents":"£Unity3D  £3D Studio Max   £Maya£ZBrush £ SketchUp \nRAdobe Flash£Unreal Development Kit\n£Animate CC£Blender \uF052Visual Studio\n\uF052其他  \n"
+            "contents": "£Unity3D  £3D Studio Max   £Maya£ZBrush £ SketchUp \nRAdobe Flash£Unreal Development Kit\n£Animate CC£Blender \uF052Visual Studio\n\uF052其他  \n"
           },
           {
             "key": "4",
             "target": "实验教学项目",
             "target0": "运行环境",
-            "contents":"服务器\nCPU  16 核、内存 128 GB、磁盘 2000  GB、显存 8  GB、GPU型号  2080Ti  \n操作系统\n£Windows Server \uF052Linux £其他 具体版本     \n数据库\n\uF052Mysql £SQL Server £Oracle\n其他    \n备注说明  需要2台高性能服务器。 \n"
+            "contents": "服务器\nCPU  16 核、内存 128 GB、磁盘 2000  GB、显存 8  GB、GPU型号  2080Ti  \n操作系统\n£Windows Server \uF052Linux £其他 具体版本     \n数据库\n\uF052Mysql £SQL Server £Oracle\n其他    \n备注说明  需要2台高性能服务器。 \n"
           },
           {
             "key": "5",
             "target": "实验教学项目",
             "target0": "项目品质",
-            "contents":"实时查看，无延时。"
+            "contents": "实时查看，无延时。"
           }
         ]
       }
     }
-
   },
   "features": {
     "tab": "实验教学项目特色",
