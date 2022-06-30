@@ -12,5 +12,5 @@ MAINTAINER gkirito
 
 COPY --from=builder app/dist /usr/share/nginx/html/
 COPY --from=builder app/3d /usr/share/nginx/html/3d
-RUN mkdir -r /usr/share/nginx/html/download
+RUN mkdir /usr/share/nginx/html/download
 COPY --from=builder app/nginx.conf /etc/nginx/conf.d/default.conf
