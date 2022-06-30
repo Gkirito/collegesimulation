@@ -9,4 +9,6 @@ services:
     container_name: collegesimulation
     restart: always
     ports:
-    - "80:80"
+      - "80:80"
+    volumes:
+      - ../download:/usr/share/nginx/html/download
