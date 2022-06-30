@@ -412,7 +412,7 @@
     },
     "cont": {
       "website": "有效链接网址",
-      "content1": "3-1有效链接网址 <a herf='/download/kali-linux-2022.1-vmware-amd64.7z'>下载</a> <br />10.129.2.227:8000",
+      "content1": "3-1有效链接网址 <a href='/download/kali-linux-2022.1-vmware-amd64.7z'>下载</a> <br />10.129.2.227:8000",
       "condition": "网络条件要求",
       "content2": "3-2网络条件要求<br />（1）说明客户端到服务器的带宽要求（需提供测试带宽服务）\n<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\uF06C\t基于公有云服务器部署的系统，5M-10M带宽；\n<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\uF06C\t基于局域网服务器部署的系统，10M-50M带宽。\n<br />（2）说明能够支持的同时在线人数（需提供在线排队提示服务）<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100．\n",
       "operating": "用户操作系统要求",
